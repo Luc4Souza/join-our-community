@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+
+    background-color:  hsl(204, 43%, 93%);
+}
+
+.card-box{
+    margin-top: 200px;
+    width: 700px;
+    margin: auto;
+}
+
+.card{
+    font-family: 'Karla', sans-serif;
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+    margin-top: 200px;
+    height: 150px;
+    
+
+    background-color: #FFFF;
+}
+
+.card > h1{
+    font-size: 25px;
+
+    color: hsl(179, 62%, 43%);
+}
+
+.card > h2{
+    margin-top: 25px;
+    font-size: 20px;
+
+    color: hsl(71, 73%, 54%);
+}
+
+.card > p{
+    margin-right: 75px;
+    margin-top: 12.5px;
+    line-height: 30px;
+    word-spacing: 1px;
+    color: hsl(218, 22%, 67%);
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.box-one{
+    font-family: 'Karla', sans-serif;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 0px 10px;
+    background-color: hsl(179, 62%, 43%)
+    ;
+}
+
+.box-one > h2{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 40px;
+    
+    color: #FFFF;
+}
+
+.price{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.price > p{
+    margin: auto;
+    margin-left: 0px;
+    font-size: 18px;
+
+    color: hsla(203, 44%, 93%, 0.616);
+}
+
+.price > span{
+    padding-right: 15px;
+    margin-left: 45px;
+    font-size: 35px;
+
+    color: #FFFF;
+}
+
+.text{
+    margin-left: 45px;
+    margin-top: 25px;
+
+    color: hsl(204, 43%, 93%);
+}
+
+button{
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+
+    background-color: hsl(71, 73%, 54%);
+}
+
+a{
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+
+    color: #FFFF;
+}
+
+.box-two{
+    font-family: 'Karla', sans-serif;
+    width: 50%;
+    border-radius: 0 0 10px 0;
+
+    background-color: hsl(179, 62%, 50%);
+    
+}
+
+.box-two h2{
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+
+    color: #FFFF;
+}
+
+.box-two >ul{
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 25px;
+
+    color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 750px){
+    .card-box{
+       width: 375px;
+       transition: 0.6s;
+    }
+    .card{
+        margin-top: 20px;
+        height: 230px;
+    }
+    .card > p{
+        margin-right: 0px;
+    }
+    .box{
+        flex-direction: column;
+        width: 375px;
+        transition: 1s;
+    }
+    .box-one{
+        border-radius: 0px ;
+        width: 100%;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+    .box-two{
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        
+    }
+    .box-two > h2{
+        margin-top: 20px;
+    }
+    ul{
+        margin-bottom: 20px;
+    }
+   
+}
